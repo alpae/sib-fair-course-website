@@ -11,3 +11,4 @@ In this project we aim to visualize the trends of the most frequently used babyn
 -   Plot the yearly trend of the top 10 baby names
 
 \![babynames](https://www.flickr.com/photos/53272102@N06/16384793435){fig-align="right" size="400"}
+

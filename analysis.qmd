@@ -1,3 +1,9 @@
+---
+title: Analysis
+---
+
+
+
 ```{r}
 #| output: false
 library(babynames)
@@ -48,3 +54,18 @@ Now, we plot the 10 most common boys name
 get_most_frequent(babynames, select_sex = "M") |>
   plot_top()
 ```
+
+
+Here we call the code to visualize the top 10 most frequent girl names from 1950 onwards:
+
+
+```{r}
+#| label: fig-line-girls
+#| fig-cap: "Line plot displaying proportion of top 10 girl names by year"
+get_most_frequent(babynames, select_sex = "F") |>
+  plot_top()
+```
+
+In @fig-line-girls you can see that there has been a peak in popularity for 'Lisa', 'Jennifer' and 'Jessica'. 
+
+
