@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>sib-fair-course-website – analysis</title>
+<title>sib-fair-course-website - Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -125,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./analysis.html" rel="" target="" aria-current="page">
- <span class="menu-text">analysis.html</span></a>
+ <span class="menu-text">Analysis</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -144,7 +144,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analysis</h1>
+</div>
 
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
 
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(babynames)</span>
@@ -253,6 +268,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="analysis_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>Here we call the code to visualize the top 10 most frequent girl names from 1950 onwards:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_most_frequent</span>(babynames, <span class="at">select_sex =</span> <span class="st">"F"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_top</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-line-girls" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="analysis_files/figure-html/fig-line-girls-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Line plot displaying proportion of top 10 girl names by year</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>In <a href="#fig-line-girls">Figure&nbsp;1</a> you can see that there has been a peak in popularity for ‘Lisa’, ‘Jennifer’ and ‘Jessica’.</p>
 
 
 
